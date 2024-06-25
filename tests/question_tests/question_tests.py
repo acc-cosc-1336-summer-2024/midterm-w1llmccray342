@@ -47,7 +47,15 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(True, get_assessment_value(value2) == 12000)
 
     def test_question_d_get_tax_assessed(self):
-       pass 
+       value1 = 6000
+       value2 = 10000
+       print(get_tax_assessed(value1))
+       print(get_tax_assessed(value2))
+
+       self.assertEqual(True, get_tax_assessed(value1) == 43.20)
+       #Debug
+       
+       self.assertEqual(True, get_tax_assessed(value2) == 72)
         
 
 
