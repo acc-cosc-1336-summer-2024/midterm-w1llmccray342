@@ -4,6 +4,7 @@ import unittest
 #follow this example to add questions b, c, and d for testing including their functions
 from src.question_a.question_a import test_config, use_global
 from src.question_b.question_b import get_random_number
+from src.question_c.question_c import get_day_of_week
 
 
 class Test_Config(unittest.TestCase):
@@ -25,6 +26,17 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(False, test_var <= 0)
         self.assertEqual(True, test_var >= 1 and test_var <= 5)
         self.assertEqual(False, test_var > 6)
+
+    def test_question_c_get_day_of_week(self):
+        self.assertEqual(True, get_day_of_week(0) == "Invalid Number")
+        self.assertEqual(True, get_day_of_week(1) == "Monday")
+        self.assertEqual(True, get_day_of_week(2) == "Tuesday")
+        self.assertEqual(True, get_day_of_week(3) == "Wednesday")
+        self.assertEqual(True, get_day_of_week(4) == "Thursday")
+        self.assertEqual(True, get_day_of_week(5) == "Friday")
+        self.assertEqual(True, get_day_of_week(6) == "Saturday")
+        self.assertEqual(True, get_day_of_week(7) == "Sunday")
+        self.assertEqual(True, get_day_of_week(8) == "Invalid Number")
         
         
 
