@@ -40,7 +40,11 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(True, get_day_of_week(8) == "Invalid Number")
 
     def test_question_d_get_assessment_value(self):
-        pass
+        value1 = 10000
+        value2 = 20000
+
+        self.assertEqual(True, get_assessment_value(value1) == 6000)
+        self.assertEqual(True, get_assessment_value(value2) == 12000)
 
     def test_question_d_get_tax_assessed(self):
        pass 
