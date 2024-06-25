@@ -5,6 +5,7 @@ import unittest
 from src.question_a.question_a import test_config, use_global
 from src.question_b.question_b import get_random_number
 from src.question_c.question_c import get_day_of_week
+from src.question_d.question_d import get_assessment_value, get_tax_assessed
 
 
 class Test_Config(unittest.TestCase):
@@ -38,8 +39,11 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(True, get_day_of_week(7) == "Sunday")
         self.assertEqual(True, get_day_of_week(8) == "Invalid Number")
 
-    
-        
+    def test_question_d_get_assessment_value(self):
+        pass
+
+    def test_question_d_get_tax_assessed(self):
+       pass 
         
 
 
