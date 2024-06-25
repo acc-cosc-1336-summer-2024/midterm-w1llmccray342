@@ -8,7 +8,7 @@ def game():
     my_guess = 0
 
     while my_guess != hidden_number:
-        my_guess = input("Please enter any number 1-5: ")
+        my_guess = int(input("Please enter any number 1-5: "))
 
         if my_guess == hidden_number:
             print("You win!")
