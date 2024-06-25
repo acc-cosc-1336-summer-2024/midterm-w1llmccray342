@@ -37,6 +37,8 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(True, get_day_of_week(6) == "Saturday")
         self.assertEqual(True, get_day_of_week(7) == "Sunday")
         self.assertEqual(True, get_day_of_week(8) == "Invalid Number")
+
+    
         
         
 
