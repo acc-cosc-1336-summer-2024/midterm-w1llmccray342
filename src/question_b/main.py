@@ -9,10 +9,12 @@ def game():
 
     while my_guess != hidden_number:
         my_guess = int(input("Please enter any number 1-5: "))
+        print(my_guess)
+        print(hidden_number)
 
         if my_guess == hidden_number:
             print("You win!")
-            return
+            
 
         elif my_guess != hidden_number: 
             print("Try again")
