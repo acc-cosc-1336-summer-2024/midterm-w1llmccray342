@@ -4,11 +4,11 @@ import question_b
 
 def game():
 
-    hidden_number = question_b.get_random_number
+    hidden_number = question_b.get_random_number()
     my_guess = 0
 
     while my_guess != hidden_number:
-        my_guess = input(int("Please enter any number 1-5: "))
+        my_guess = int(input("Please enter any number 1-5: "))
         print(my_guess)
         print(hidden_number)
 
@@ -28,7 +28,7 @@ def main_menu():
         game()
 
         print("Would you like to play again?")
-        keep_running = input("Y to keep running or any other button to stop")
+        keep_running = input("Y to keep running or any other button to stop: ")
 
         keep_running = keep_running.lower()
 
