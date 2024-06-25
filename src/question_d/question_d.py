@@ -5,10 +5,11 @@ def get_assessment_value(value):
     return assessment_value
 
 def get_tax_assessed(value):
-    
-    necessary_assessment = value / 100
+    tax_assessed = 0
 
-    tax_assessed = necessary_assessment * 0.72
+    for values in range(value):
+        if values % 100 == 0:
+            tax_assessed += 0.72
 
     return round(tax_assessed, 2)
 
