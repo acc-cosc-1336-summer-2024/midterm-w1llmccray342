@@ -8,6 +8,7 @@ def get_tax_assessed(value):
     
     necessary_assessment = value / 100
 
-    tax_assessed = necessary_assessment *0.72
+    tax_assessed = necessary_assessment * 0.72
 
-    return tax_assessed
+    return round(tax_assessed, 2)
+
