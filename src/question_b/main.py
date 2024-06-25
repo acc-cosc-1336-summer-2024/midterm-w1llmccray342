@@ -5,10 +5,10 @@ import question_b
 def game():
 
     hidden_number = question_b.get_random_number
-
-    my_guess = input("Please enter any number 1-5: ")
+    my_guess = 0
 
     while my_guess != hidden_number:
+        my_guess = input("Please enter any number 1-5: ")
 
         if my_guess == hidden_number:
             print("You win!")
@@ -34,7 +34,7 @@ def main_menu():
             print("See you next time!")
 
 
-
-
 def main():
     main_menu()
+
+main()
