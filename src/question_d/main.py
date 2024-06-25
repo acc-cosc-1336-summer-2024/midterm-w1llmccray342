@@ -9,8 +9,8 @@ def user_input():
     user_assess_val = question_d.get_assessment_value(user_flt_input)
     user_tax_assess = question_d.get_tax_assessed(user_assess_val)
 
-    print("Your assessment value of the property is...", user_assess_val)
-    print("Your property tax is...", user_tax_assess)
+    print("Your assessment value of the property is... $"+ str(user_assess_val))
+    print("Your property tax is... $" + str(user_tax_assess))
 
 def main_menu():
     keep_running = "y"
