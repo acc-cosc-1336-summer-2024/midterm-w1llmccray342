@@ -1,6 +1,6 @@
 #add import
 import question_b
-import question_b.question_b
+
 
 def game():
 
